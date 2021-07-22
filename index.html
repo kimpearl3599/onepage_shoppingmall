@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>꺄르르마켓_브랜드 아동복 원페이지 쇼핑몰</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        .order {
+            width: 500px;
+            margin: 50px auto;
+        }
+
+        .title_image {
+            width: 500px;
+            display: block;
+        }
+
+        .information {
+            margin-top: 30px
+        }
+
+        .product {
+            display: flex;
+            align-items: center;
+        }
+
+        .product_title {
+            margin-right: 15px;
+        }
+
+        .product_cost {
+            color: dimgrey;
+        }
+
+        .description {
+            margin-top: 20px
+        }
+
+        .model {
+            font-size: 18px;
+            font-weight: bold;
+            color: cornflowerblue;
+        }
+
+        .comment {
+            margin-top: -10px;
+        }
+
+        .input-group {
+            margin-top: 12px
+        }
+        .input-group:nth-child(3) {
+            margin-top: 0;
+        }
+        .submit {
+            margin: 24px auto 0;
+            width: 100px;
+            display: block
+        }
+    </style>
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다.')
+        }
+    </script>
+</head>
+
+<body>
+<section class="order">
+
+    <img class="title_image" src="https://ozkiz.com/web/product/extra/small/202105/39f7df6988fffd01e6c3b24351280a08.jpg"
+         alt="새콩달콩 원피스">
+
+    <div class="information">
+        <div class="product">
+            <h1 class="product_title">새콩달콩 원피스</h1>
+            <span class="product_cost">가격: 36,900원/벌</span>
+        </div>
+        <div class="description">
+            <p class="comment model">Model 레아</p>
+            <p class="comment">4세 / 키 93cm / 몸무게 13kg</p>
+            <p class="comment">새콩달콩 원피스 100호를 착용하였습니다.</p>
+        </div>
+    </div>
+    <div class="customer_info">
+        <div class="input-group">
+            <div class="input-group-text" id="btnGroupAddon1">주문자</div>
+            <input type="text" class="form-control" placeholder="이름을 입력해주세요." aria-label="Input group example"
+                   aria-describedby="btnGroupAddon">
+        </div>
+        <div class="input-group">
+            <div class="input-group-text" id="btnGroupAddon2">수량</div>
+<!--            왜 드롭다운이 안먹는지 모르겠네요 ㅠㅠ-->
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    -- 수량을 선택하세요 --
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>
+                        <button class="dropdown-item" type="button">1</button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item" type="button">2</button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item" type="button">3</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="input-group">
+        <div class="input-group-text" id="btnGroupAddon3">주소</div>
+        <input type="text" class="form-control" placeholder="배송받으실 주소를 입력해주세요." aria-label="Input group example"
+               aria-describedby="btnGroupAddon">
+    </div>
+    <div class="input-group">
+        <div class="input-group-text" id="btnGroupAddon4">전화번호</div>
+        <input type="text" class="form-control" placeholder="'-'는 제외하고 입력해주세요" aria-label="Input group example"
+               aria-describedby="btnGroupAddon">
+    </div>
+    </div>
+
+
+    <button onclick="order()" type="button" class="btn btn-primary submit">주문하기</button>
+</section>
+</body>
+</html>
